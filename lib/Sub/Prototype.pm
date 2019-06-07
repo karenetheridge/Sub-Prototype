@@ -2,12 +2,13 @@ use strict;
 use warnings;
 
 package Sub::Prototype;
+# ABSTRACT: Set a sub's prototype
 
 require 5.008001;
 
 use XSLoader;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 XSLoader::load(__PACKAGE__, $VERSION);
 
@@ -20,9 +21,7 @@ use Sub::Exporter -setup => {
 
 __END__
 
-=head1 NAME
-
-Sub::Prototype - Set a subs prototype
+=pod
 
 =head1 SYNOPSIS
 
@@ -49,17 +48,5 @@ Sets the prototype for C<coderef> to C<$prototype>.
 =head1 THANKS
 
 Shawn M Moore for the idea and tests.
-
-=head1 AUTHOR
-
-Florian Ragwitz E<lt>rafl@debian.orgE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (c) 2008  Florian Ragwitz
-
-This module is free software.
-
-It may distribute it under the same terms as perl itself.
 
 =cut

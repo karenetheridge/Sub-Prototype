@@ -1,16 +1,13 @@
 use strict;
 use warnings;
 
-require 5.008001;
+use lib 'inc';
+use ExtUtils::MakeMaker::Dist::Zilla::Develop;
 
-use inc::Module::Install;
-
-name 'Sub-Prototype';
-all_from 'lib/Sub/Prototype.pm';
-
-requires 'XSLoader';
-requires 'Sub::Exporter';
-
-extra_tests();
-
-WriteAll;
+WriteMakefile(
+    NAME => 'Sub::Prototype',
+    VERSION_FROM => 'lib/Sub/Prototype.pm',
+    INSTALLMAN1DIR => 'none',
+    INSTALLMAN3DIR => 'none',
+    NORECURS => 1,
+);

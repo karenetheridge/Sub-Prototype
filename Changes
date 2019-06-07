@@ -1,3 +1,8 @@
+Revision history for Sub-Prototype
+
+{{$NEXT}}
+  * convert packaging to Dist::Zilla (resolves RT#121723)
+
 0.02      2008-11-11 17:55:49Z
   * Require perl 5.8.1.
     The default typemap on 5.6 doesn't make any sense for CVs. In case it turns
