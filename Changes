@@ -1,5 +1,7 @@
 Revision history for Sub-Prototype
 
+{{$NEXT}}
+
 0.03      2019-06-10 16:51:49Z
   * convert packaging to Dist::Zilla (resolves RT#121723)
 
