@@ -45,6 +45,16 @@ This module only has one function, which is also exported by default:
 
 Sets the prototype for C<coderef> to C<$prototype>.
 
+=head1 SEE ALSO
+
+=over 4
+
+=item *
+
+L<Sub::Util/set_prototype>
+
+=back
+
 =head1 THANKS
 
 Shawn M Moore for the idea and tests.
